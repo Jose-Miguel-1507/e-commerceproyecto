@@ -1,77 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minkashop | Colombia</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link href="./assets/css/styles.css" rel="stylesheet" />
-</head>
-<body class="d-flex flex-column min-vh-100">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Minkashop</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="compras.html">Compras</a></li>
-          <li class="nav-item"><a class="nav-link" href="acercade.html">Acerca de</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINKASHOP - Portal de Artesanías</title>
+    <link rel="stylesheet" href=".\assets\css\styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">MINKASHOP</h1>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                  <i class="fas fa-bars"></i>
+              </button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li class="cart-icon"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="bg-light py-5">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold">Bienvenido al Portal de Artesanías</h1>
-      <p class="lead">Productos hechos a mano con pasión, cultura y tradición.</p>
-      <a href="productos.html" class="btn btn-primary btn-lg mt-3">Explora nuestro catálogo</a>
-    </div>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Bienvenido al Portal de Artesanías</h2>
+                <p>Productos hechos a mano con pasión, cultura y tradición</p>
+                <a href="#" class="btn">Explora nuestro catálogo</a>
+            </div>
+        </section>
 
-  <!-- Beneficios -->
-  <section class="container py-5">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <i class="fas fa-hand-holding-heart fa-2x text-primary mb-3"></i>
-        <h5 class="fw-bold">Artesanía con propósito</h5>
-        <p>Apoyamos a comunidades locales brindando un espacio digital para sus creaciones.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-globe-americas fa-2x text-primary mb-3"></i>
-        <h5 class="fw-bold">Alcance nacional</h5>
-        <p>Realizamos envíos a todo el país para que las artesanías lleguen a donde estés.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-leaf fa-2x text-primary mb-3"></i>
-        <h5 class="fw-bold">Sostenibilidad</h5>
-        <p>Fomentamos prácticas responsables con el medio ambiente y la cultura ancestral.</p>
-      </div>
-    </div>
-  </section>
+        <section class="features">
+            <div class="container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Artesanía con propósito</h3>
+                    <p>Apoyamos a comunidades locales brindando un espacio digital para sus creaciones.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Alcance nacional</h3>
+                    <p>Realizamos envíos a todo el país para que las artesanías lleguen a donde estás.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sostenibilidad</h3>
+                    <p>Fomentamos prácticas responsables con el medio ambiente y la cultura ancestral.</p>
+                </div>
+            </div>
+          </section>
+            <section class="product-carousel">
+              <div class="container">
+                  <h2>Nuestros Productos Destacados</h2>
+                  <div class="carousel-container">
+                      <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                      
+                      <div class="carousel-track">
+                          <!-- Productos se generarán dinámicamente -->
+                          <div class="carousel-slide">
+                              <img src="https://http2.mlstatic.com/D_NQ_NP_767304-MCO82728520730_032025-O.webp" alt="Producto artesanal">
+                              <h3>Mochila Wayuu Pequeña</h3>
+                              <p class="price">Unicolor Originales Artesanía Guajira</p>
+                              <br>
+                              <p class="price">$55.200</p>
+                              <button class="add-to-cart">Añadir al carrito</button>
+                          </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-auto">
-    <div class="container">
-      <p class="mb-2">&copy; 2025 Portal de Artesanías. Todos los derechos reservados.</p>
-      <div>
-        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
-      </div>
-      <small class="d-block mt-2">Proyecto académico desarrollado con tecnologías web modernas.</small>
-    </div>
-  </footer>
+                          <div class="carousel-slide">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_941012-MCO46317773319_062021-O.webp" alt="Producto artesanal">
+                            <h3>Combo 2 Hamacas Colombianas</h3>
+                            <p class="price">En Algodon Alta Calidad Refuerzo</p>
+                            <br>
+                            <p class="price">$84.000</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
+                        <div class="carousel-slide">
+                          <img src="https://http2.mlstatic.com/D_NQ_NP_767304-MCO82728520730_032025-O.webp" alt="Producto artesanal">
+                          <h3>Mochila Wayuu Pequeña</h3>
+                          <p class="price">Unicolor Originales Artesanía Guajira</p>
+                          <br>
+                          <p class="price">$55.200</p>
+                          <button class="add-to-cart">Añadir al carrito</button>
+                      </div>
+
+                      <div class="carousel-slide">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_941012-MCO46317773319_062021-O.webp" alt="Producto artesanal">
+                        <h3>Combo 2 Hamacas Colombianas</h3>
+                        <p class="price">En Algodon Alta Calidad Refuerzo</p>
+                        <br>
+                        <p class="price">$84.000</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+
+                    <div class="carousel-slide">
+                      <img src="https://http2.mlstatic.com/D_NQ_NP_767304-MCO82728520730_032025-O.webp" alt="Producto artesanal">
+                      <h3>Mochila Wayuu Pequeña</h3>
+                      <p class="price">Unicolor Originales Artesanía Guajira</p>
+                      <br>
+                      <p class="price">$55.200</p>
+                      <button class="add-to-cart">Añadir al carrito</button>
+                  </div>
+
+                  <div class="carousel-slide">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_941012-MCO46317773319_062021-O.webp" alt="Producto artesanal">
+                    <h3>Combo 2 Hamacas Colombianas</h3>
+                    <p class="price">En Algodon Alta Calidad Refuerzo</p>
+                    <br>
+                    <p class="price">$84.000</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                          <!-- Más slides... -->
+                      </div>
+                      
+                      <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                  </div>
+              </div>
+          </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MINKASHOP 
+              <br>
+              <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+              Todos los derechos reservados.</p>
+           
+        </div>
+    </footer>
+
+    <script src=".\assets\js\main.js"></script>
 </body>
 </html>
