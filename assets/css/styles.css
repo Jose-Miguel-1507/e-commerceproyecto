@@ -202,6 +202,50 @@ nav ul li a:hover {
     line-height: 1.7;
 }
 
+/*acerdade*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col-6 {
+    flex: 1 1 48%;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.texto{
+    text-align: justify;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 20px;
+}
+
+.imagen {
+    max-width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.acerca {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 40px;
+    color: #0D6EFD;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.titulo {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 30px;
+    color: #0D6EFD;
+    margin-bottom: 20px;
+    text-align: center;
+}
 /* Footer */
 footer {
     background-color: #212529;
