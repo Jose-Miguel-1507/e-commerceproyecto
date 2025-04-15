@@ -19,11 +19,61 @@
                 <nav>
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="productos.html">Productos</a></li>
                         <li><a href="#">Compras</a></li>
                         <li><a href="acercade.html">Acerca de</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
-                        <li class="cart-icon"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        
+                        <!-- En el header -->
+<li class="nav-cart">
+    <a href="#" class="cart-trigger" aria-label="Carrito de compras">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <span class="cart-badge">0</span>
+    </a>
+</li>
+
+<!-- Modal del carrito -->
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3 class="cart-title">Tu Carrito</h3>
+            <button class="cart-close" aria-label="Cerrar carrito">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-body">
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+            
+            <div class="cart-items-container">
+                <!-- Items del carrito aparecerán aquí -->
+            </div>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-amount">$0.00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <p class="cart-taxes">* Impuestos y envío calculados al finalizar</p>
+            </div>
+            
+            <div class="cart-actions">
+                <button class="btn btn-secondary continue-shopping">Seguir Comprando</button>
+                <button class="btn btn-primary checkout-btn" disabled>Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+                        
                     </ul>
                 </nav>
             </div>
